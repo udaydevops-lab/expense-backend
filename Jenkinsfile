@@ -12,7 +12,7 @@ pipeline {
     }
     environment{
         def appVersion = '' //variable declaration
-        nexusUrl = "3.94.161.74:8081/repository/backend/"
+        nexusUrl = "nexus.prajai.online:8081/repository/backend/"
         region = "us-east-1"
         account_id = "058264194894"
     }
