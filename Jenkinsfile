@@ -110,7 +110,7 @@ pipeline {
         }
         
         
-        /* stage('Deploy'){
+        stage('Deploy'){
             when{
                 expression{
                     params.deploy
@@ -121,10 +121,10 @@ pipeline {
                     def params = [
                         string(name: 'appVersion', value: "${appVersion}")
                     ]
-                    build job: 'backend-deploy', parameters: params, wait: false
+                    build job: 'expense-backend-deploy', parameters: params, wait: false
                 }
             }
-        } */
+        }
     }
     
     post { 
