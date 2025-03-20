@@ -68,11 +68,11 @@ pipeline {
         
        stage('Sonar Scan'){
             environment {
-                scannerHome = tool 'sonar-6.0' //referring scanner CLI
+                scannerHome = tool 'sonar' //referring scanner CLI
             }
             steps {
                 script {
-                    withSonarQubeEnv('sonar-6.0') { //referring sonar server
+                    withSonarQubeEnv('sonar') { //referring sonar server
                         sh "${scannerHome}/bin/sonar-scanner"
                     }
                 }
